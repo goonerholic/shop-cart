@@ -1,0 +1,41 @@
+.Cart {
+	width: 280px;
+	height: 600px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+
+	h2 {
+		position: relative;
+	}
+
+	li + li {
+		margin-top: 1rem;
+	}
+
+	.total-amount {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: bold;
+
+		button {
+			background-color: #3091e0;
+			border: none;
+			color: white;
+			padding: 6px 24px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			margin: 4px 2px;
+			cursor: pointer;
+			outline: none;
+
+			&:hover {
+				box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+					0 17px 50px 0 rgba(0, 0, 0, 0.19);
+			}
+		}
+	}
+}
